@@ -1,0 +1,26 @@
+.main-screen--brands {
+  background-image: url("../img/Select-Charlotte_Capture0136-bewerkt.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main-screen--brands .container-fluid {
+  min-height: 1000px;
+}
+
+.main-screen--brands a {
+  color: #E63312;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-screen {
+    background-size: 100%;
+    background-position: top center;
+  }
+  .main-screen .container-fluid {
+    min-height: auto;
+    padding-bottom: 20vw;
+  }
+}

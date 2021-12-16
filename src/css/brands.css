@@ -1,0 +1,166 @@
+.main-screen--brands {
+  background-image: url("../img/cover-anita-2000-1000-500-75.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brands {
+  padding: 159px 0;
+  background: #33677F;
+  color: #fff;
+}
+
+.brands .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brands__col {
+  width: 49%;
+}
+
+.brands__card {
+  width: 100%;
+  background: #173B54;
+  padding: 40px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: 40px;
+}
+
+.brands__card .brands__card-link {
+  color: #E63312;
+  text-decoration: underline;
+}
+
+.brands__card .brands__card-link:hover {
+  color: #33677F;
+}
+
+.brands__card p {
+  line-height: 1.1;
+}
+
+.brands__card-img {
+  display: block;
+  max-width: 100%;
+}
+
+.tags__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 8px;
+}
+
+.tag {
+  color: #fff;
+  height: 48px;
+  border: 2px solid #fff;
+  margin-right: 0.833vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.250vw;
+  font-size: 20px;
+  margin-bottom: 1.250vw;
+}
+
+.tag:hover {
+  color: #fff;
+}
+
+.card-button img {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.card-button {
+  cursor: pointer;
+}
+
+.brands__card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.brands__card-logo-wrapper {
+  min-height: 98px;
+  margin-bottom: 5px;
+}
+
+.brands__card.active {
+  background: transparent;
+}
+
+.brands__card.active .card-button img {
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+@media only screen and (max-width: 992px) {
+  .main-screen {
+    background-size: 100%;
+    background-position: top center;
+  }
+  .brands .container-fluid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brands__col {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-button {
+    display: none;
+  }
+  .brands {
+    padding-top: 0vw;
+    padding-bottom: 25vw;
+  }
+  .brands .container-fluid {
+    width: 100%;
+    max-width: 100%;
+  }
+  .brands__card {
+    margin-bottom: 10.256vw;
+    padding: 10.256vw 8.205vw;
+  }
+  .brands__card-logo-wrapper {
+    min-height: auto;
+    margin-bottom: 4.103vw;
+  }
+  .tag {
+    font-size: 4.103vw;
+    height: 9.231vw;
+    margin-right: 2.051vw;
+    padding: 0 4.103vw;
+  }
+}

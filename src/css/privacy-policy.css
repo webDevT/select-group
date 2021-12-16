@@ -1,0 +1,85 @@
+.privacy-policy {
+  background: #33677F;
+  padding-top: 80px;
+  padding-bottom: 200px;
+  color: #fff;
+}
+
+.privacy-policy .h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.privacy-policy__item {
+  width: 1216px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.privacy-policy__item a {
+  color: #E63312;
+}
+
+.privacy-policy__item a:hover {
+  color: #173B54;
+}
+
+.privacy-policy__title {
+  font-weight: 700;
+}
+
+.privacy-table {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.table__col {
+  width: 25%;
+}
+
+.table__row--header {
+  font-weight: 700;
+}
+
+.table__row-item {
+  font-size: 20px;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  border-bottom: 1px solid #fff;
+}
+
+.table__row-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .table__row--header {
+    display: none;
+  }
+  .table__row-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 4.615vw;
+    padding-top: 5vw;
+    padding-bottom: 0vw;
+  }
+  .table__col {
+    width: 100%;
+  }
+  .privacy-table {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+  }
+}
